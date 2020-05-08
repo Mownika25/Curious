@@ -22,8 +22,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //This is additional feature, used to run a progress bar
-        splashProgress = findViewById(R.id.splashProgress);
-        playProgress();
+        //splashProgress = findViewById(R.id.splashProgress);
+        //playProgress();
 
         //Code to start timer and take action after the timer ends
         new Handler().postDelayed(new Runnable() {
@@ -41,10 +41,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //Method to run progress bar for 5 seconds
-    private void playProgress() {
+   /*private void playProgress() {
         ObjectAnimator.ofInt(splashProgress, "progress", 100)
                 .setDuration(5000)
                 .start();
-    }
+    }*/
 
 }
